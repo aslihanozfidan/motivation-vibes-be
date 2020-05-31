@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  mongo:
+    container_name: "mongodb-mv"
+    image: mongo
+    restart: always
+    ports:
+      - 28017:28017
+    volumes:
+      - ./data:/data/db
