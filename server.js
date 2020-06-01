@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = require("./routes");
 const app = express();
-const port = 2500;
+const port = process.env.PORT || 2500;
 const router = new routes();
 const connection = require("./src/database/connection");
 
