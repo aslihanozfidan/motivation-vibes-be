@@ -5,6 +5,7 @@ const quoteSchema = new Schema({
   id: String,
   quote: String,
   language: Number,
+  source: String,
   owner: String
 })
 
