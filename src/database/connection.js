@@ -4,7 +4,7 @@ class Connection {
   static getInstance() {
     if (Connection.db == undefined) {
       Connection.db = mongoose
-        .connect('mongodb://localhost:27017/motivation-vibes', { useNewUrlParser: true, useUnifiedTopology: true })
+        .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(() => {
           console.log('mongoose is running')
           return Connection.db
