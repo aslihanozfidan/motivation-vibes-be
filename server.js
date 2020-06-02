@@ -7,7 +7,7 @@ const router = new routes()
 const connection = require('./src/database/connection')
 
 app.use(cors({
-  origin: 'https://aslihanozfidan.github.io/motivation-vibes'
+  origin: 'https://aslihanozfidan.github.io'
 }));
 
 appInitializer = () => {
